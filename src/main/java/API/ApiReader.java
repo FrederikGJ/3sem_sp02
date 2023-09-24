@@ -2,7 +2,6 @@ package API;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import lombok.*;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -23,8 +22,7 @@ public class ApiReader {
             response = client.newCall(request).execute();
             String res = response.body().string();
 
-            JokeDTO jokeDTO = gson.fromJson(res, JokeDTO.class);
-            System.out.println(jokeDTO);
+            System.out.println(res);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
