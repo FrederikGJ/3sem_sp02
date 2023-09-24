@@ -29,10 +29,16 @@ public class ApiReader {
         try {
             response = client.newCall(request).execute();
             String res = response.body().string();
+
+            /*
+
+            PRINTLINE FOR TEST
             System.out.println("*************************************");
             System.out.println(res);
             System.out.println("*************************************");
             System.out.println(weatherParser(res));
+
+             */
 
             return weatherParser(res);
 

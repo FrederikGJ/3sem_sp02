@@ -1,4 +1,5 @@
 import API.ApiReader;
+import entity.WatherDTOtoEntity;
 import entity.WeatherEntity;
 
 import java.util.ArrayList;
@@ -9,12 +10,16 @@ public class Main {
 
         List<WeatherEntity> weatherEntityList = new ArrayList<>();
 
-        ApiReader.apiGet("Roskilde");
-        ApiReader.apiGet("Hillerød");
-        ApiReader.apiGet("Albertslund");
-        ApiReader.apiGet("Amager");
+        WeatherEntity w1 = WatherDTOtoEntity.weatherDTOtoEntity(ApiReader.apiGet("Roskilde"));
+        WeatherEntity w2 =WatherDTOtoEntity.weatherDTOtoEntity(ApiReader.apiGet("Hillerød"));
+        WeatherEntity w3 =WatherDTOtoEntity.weatherDTOtoEntity(ApiReader.apiGet("Albertslund"));
+        WeatherEntity w4 =WatherDTOtoEntity.weatherDTOtoEntity(ApiReader.apiGet("Amager"));
 
+        weatherEntityList.add(w1);
+        weatherEntityList.add(w2);
+        weatherEntityList.add(w3);
+        weatherEntityList.add(w4);
 
-        System.out.println(weatherEntityList);
+        weatherEntityList.forEach(System.out::println);
     }
 }
