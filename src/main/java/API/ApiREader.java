@@ -1,3 +1,5 @@
+package API;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.*;
@@ -20,21 +22,12 @@ public class ApiReader {
         try {
             response = client.newCall(request).execute();
             String res = response.body().string();
+
             JokeDTO jokeDTO = gson.fromJson(res, JokeDTO.class);
             System.out.println(jokeDTO);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
 
-    }
-    @ToString
-    @NoArgsConstructor
-    private static class JokeDTO {
-        private String value;
-        private String url;
-        private String icon_url;
-        private String id;
-        private String created_at;
-        private String updated_at;
-    }
 }
