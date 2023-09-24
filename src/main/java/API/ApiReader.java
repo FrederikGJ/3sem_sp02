@@ -9,9 +9,16 @@ import okhttp3.Response;
 import java.io.IOException;
 
 public class ApiReader {
-    static Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    public static void main(String[] args) {
-        String url = "https://api.chucknorris.io/jokes/random";
+
+    /*
+    VIGTIG REFACTOR - METODEN LUKKER SIG IKKE (den kører udendeligt) -
+    THOMAS VIDSTE IKKE HVORDAN I SIDSTE UGE.
+    SÅ VI SKAL HAVE FAT I HAM OMKRING DET
+    */
+
+    public static void apiGet(String location) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String url = "https://vejr.eu/api.php?location="+location+"&degree=C";
         OkHttpClient client = new OkHttpClient().newBuilder().build();
         Request request = new Request.Builder()
                 .url(url)
@@ -26,6 +33,9 @@ public class ApiReader {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
     }
+
+
 
 }
