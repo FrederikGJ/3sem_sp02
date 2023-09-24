@@ -1,5 +1,6 @@
 package API;
 
+import DTO.WeatherDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
@@ -16,7 +17,7 @@ public class ApiReader {
     SÅ VI SKAL HAVE FAT I HAM OMKRING DET
     */
 
-    public static void apiGet(String location) {
+    public static WeatherDTO apiGet(String location) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String url = "https://vejr.eu/api.php?location="+location+"&degree=C";
         OkHttpClient client = new OkHttpClient().newBuilder().build();
@@ -28,16 +29,24 @@ public class ApiReader {
         try {
             response = client.newCall(request).execute();
             String res = response.body().string();
-
-            
-
             System.out.println(res);
+
+            System.out.println(weatherParser(res));
+
+            return weatherParser(res);
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
+    private static WeatherDTO weatherParser(String json) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        WeatherDTO weatherDTO = gson.fromJson(json, WeatherDTO.class);
+        return weatherDTO;
+    }
 
 
 }
