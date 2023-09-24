@@ -1,6 +1,7 @@
 import controller.ApiReader;
 import model.WatherDTOtoEntity;
 import model.WeatherEntity;
+import repository.WeatherDAO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,5 +22,12 @@ public class Main {
         weatherEntityList.add(w4);
 
         weatherEntityList.forEach(System.out::println);
+
+        WeatherDAO weatherDAO = WeatherDAO.getInstance();
+
+        //create weather in database
+        weatherEntityList.forEach(weatherDAO::createWeather);
+
+
     }
 }
