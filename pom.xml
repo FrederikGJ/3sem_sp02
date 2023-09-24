@@ -78,7 +78,7 @@
             <artifactId>okhttp</artifactId>
             <version>4.2.2</version>
         </dependency>
-        <!-- Gson is a Java library that can be used to convert Java Objects into their JSON representation.-->
+        <!--  Gson is a Java library that can be used to convert Java Objects into their JSON representation.-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
