@@ -79,7 +79,7 @@
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
-        <!--  Javalin for that api-->
+        <!--  Javalin for dat frontend-->
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin</artifactId>
