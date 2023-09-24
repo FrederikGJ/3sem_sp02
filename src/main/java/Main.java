@@ -1,6 +1,6 @@
-import API.ApiReader;
-import entity.WatherDTOtoEntity;
-import entity.WeatherEntity;
+import controller.ApiReader;
+import model.WatherDTOtoEntity;
+import model.WeatherEntity;
 
 import java.util.ArrayList;
 import java.util.List;

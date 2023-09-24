@@ -1,4 +1,4 @@
-package API;
+package controller;
 
 import DTO.WeatherDTO;
 import com.google.gson.Gson;
