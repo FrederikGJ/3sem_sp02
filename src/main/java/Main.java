@@ -10,11 +10,10 @@ public class Main {
         List<WeatherEntity> weatherEntityList = new ArrayList<>();
 
         ApiReader.apiGet("Roskilde");
-        ApiReader.apiGet("København");
-        ApiReader.apiGet("Odense");
         ApiReader.apiGet("Hillerød");
         ApiReader.apiGet("Albertslund");
         ApiReader.apiGet("Amager");
+
 
         System.out.println(weatherEntityList);
     }
