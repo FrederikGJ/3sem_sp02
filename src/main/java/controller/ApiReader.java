@@ -42,9 +42,6 @@ public class ApiReader {
 
             return weatherParser(res);
 
-
-
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
