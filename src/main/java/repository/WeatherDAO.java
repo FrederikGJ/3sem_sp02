@@ -60,6 +60,8 @@ public class WeatherDAO {
 
     // implementer yderligere metoder til DAO - getAll, getYesterday, update(LocalDate date) etc.
     // lave test af de ting jeg selv har skrevet
+    // lave en frontend i react ???
+
 
 
 }
