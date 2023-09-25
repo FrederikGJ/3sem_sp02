@@ -57,4 +57,7 @@ public class WeatherDAO {
             em.getTransaction().commit();
         }
     }
+
+    // implementer yderligere metoder til DAO - getAll, getYesterday, update(LocalDate date) etc.
+    
 }
