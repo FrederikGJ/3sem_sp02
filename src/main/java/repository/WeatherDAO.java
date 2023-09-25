@@ -59,5 +59,6 @@ public class WeatherDAO {
     }
 
     // implementer yderligere metoder til DAO - getAll, getYesterday, update(LocalDate date) etc.
-    
+
+
 }
