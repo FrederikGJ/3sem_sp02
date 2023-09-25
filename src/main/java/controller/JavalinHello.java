@@ -37,7 +37,7 @@ public class JavalinHello {
                 weatherDAO.createWeather(weatherEntity);
 
                 // Return status 201 (Created)
-                ctx.status(201);
+                ctx.status(201);    
             } catch (Exception e) {
                 // Handle any potential exceptions
                 ctx.status(500).result(e.getMessage());
