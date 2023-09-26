@@ -33,10 +33,10 @@ public class Main {
 
 
         List<LocationEntity> locationEntityList = new ArrayList<>();
-        LocationEntity l1 = LocationDTOtoEntity.locationDTOtoEntity(ApiReader.apiGet1(3400));
+        LocationEntity l1 = LocationDTOtoEntity.locationDTOtoEntity(ApiReader.apiGet1(1081));
 
-       // locationEntityList.add(l1);
-       // locationEntityList.forEach(System.out::println);
+        locationEntityList.add(l1);
+        locationEntityList.forEach(System.out::println);
 
 
     }

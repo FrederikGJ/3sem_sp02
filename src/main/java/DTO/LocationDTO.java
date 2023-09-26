@@ -8,15 +8,14 @@ import lombok.*;
 @Setter
 @Builder
 public class LocationDTO {
-    private String LocationName;
+    private String kode;
     private CurrentDataDTO CurrentData;
 
     @Override
     public String toString() {
-        return "LocationDTO{" +
-                "LocationName='" + LocationName + '\'' +
-                ", CurrentData=" + CurrentData +
-                '}';
+        return "LocationDTO(kdoe=" + kode + ", dagiId=" + CurrentData.getDagiId() +", navn=" + CurrentData.getNavn() +
+                ", nuts2=" + CurrentData.getNuts2() +  ", href=" + CurrentData.getHref();
+
     }
 
     @AllArgsConstructor
@@ -26,13 +25,10 @@ public class LocationDTO {
     @Builder
     public static class CurrentDataDTO{
         private String id;
-        private String hovedtype;
-        private String undertype;
-        private String primærtnavn;
-        private String primærnavnestatus;
-        private String ændret;
-        private String geo_ændret;
-        private int geo_version;
+        private String dagiId;
+        private String navn;
+        private String nuts2;
+        private String href;
 
 
     }

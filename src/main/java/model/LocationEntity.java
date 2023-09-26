@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 
-
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,14 +17,12 @@ public class LocationEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private String id;
-        private String hovedtype;
-        private String undertype;
-        private String primærtnavn;
-        private String primærnavnestatus;
-        private String ændret;
-        private String geo_ændret;
-        private int geo_version;
+    private int id;
+    private String dagiId;
+    private String kode;
+    private String navn;
+    private String nuts2;
+    private String href;
 }
 
 

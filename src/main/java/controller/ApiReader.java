@@ -48,28 +48,25 @@ public class ApiReader {
         }
 
     }
-    public static LocationDTO apiGet1(int cityCode){
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String url = "https://api.dataforsyningen.dk/steder?/postnr=" + cityCode;
+    public static LocationDTO apiGet1(int cityCode) {
+        //Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String url = "https://api.dataforsyningen.dk/regioner/" + cityCode;
         OkHttpClient client = new OkHttpClient().newBuilder().build();
         Request request = new Request.Builder()
                 .url(url)
                 .method("GET", null)
                 .build();
-        Response response = null;
+        //Response response = null;
 
-        try {
-            response = client.newCall(request).execute();
-            String res = response.body().string();
-
+        try (Response response = client.newCall(request).execute()) {
+            String res = (response.body().string());
 
 
-           // PRINTLINE FOR TEST
+            // PRINTLINE FOR TEST
             System.out.println("*************************************");
             System.out.println(res);
             System.out.println("*************************************");
             System.out.println(locationParser(res));
-
 
 
             return locationParser(res);
