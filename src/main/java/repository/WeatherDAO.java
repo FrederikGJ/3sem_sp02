@@ -7,12 +7,9 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
 public class WeatherDAO {
-
     private EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryConfig();
     private static WeatherDAO weatherDAO = null;
-
     private WeatherDAO() {}
-
     public static WeatherDAO getInstance() {
         if (weatherDAO == null) {
             weatherDAO = new WeatherDAO();
