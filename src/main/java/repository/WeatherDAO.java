@@ -60,9 +60,6 @@ public class WeatherDAO {
         }
     }
 
-    // implementer yderligere metoder til DAO - getAll, getYesterday, update(LocalDate date) etc.
-    // lave test af de ting jeg selv har skrevet
-    // lave en frontend i react ???
 
     public List<WeatherEntity> readAllWeather () {
         try (EntityManager em = emf.createEntityManager()) {
@@ -70,6 +67,18 @@ public class WeatherDAO {
             return locationEntities;
         }
     }
+
+    
+    public WeatherEntity getWeatherByLocationName(String locationName) {
+        try (EntityManager em = emf.createEntityManager()) {
+            WeatherEntity weatherEntity = em.createQuery("SELECT w FROM WeatherEntity w WHERE w.locationName = :locationName", WeatherEntity.class)
+                    .setParameter("locationName", locationName)
+                    .getSingleResult();
+            return weatherEntity;
+        }
+    }
+
+
 
 
 

@@ -21,12 +21,16 @@ public class Main {
         weatherEntityList.add(w3);
         weatherEntityList.add(w4);
 
-        weatherEntityList.forEach(System.out::println);
+        //weatherEntityList.forEach(System.out::println);
 
         WeatherDAO weatherDAO = WeatherDAO.getInstance();
 
         //create weather in database
         weatherEntityList.forEach(weatherDAO::createWeather);
+
+        //read all weather from database
+        List<WeatherEntity> weatherEntityList1 = weatherDAO.readAllWeather();
+        weatherEntityList1.forEach(System.out::println);
 
 
     }
