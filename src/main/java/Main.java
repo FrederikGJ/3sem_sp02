@@ -33,8 +33,8 @@ public class Main {
         weatherEntityList1.forEach(System.out::println);
 
         System.out.println("We want to see weather with location Roskilde");
-        WeatherEntity weatherEntity = weatherDAO.getWeatherByLocationName("Roskilde");
-        System.out.println(weatherEntity);
+        List<WeatherEntity> weatherEntityList2 = weatherDAO.getWeatherByLocationName("Hillerød");
+        System.out.println(weatherEntityList2);
 
 
     }

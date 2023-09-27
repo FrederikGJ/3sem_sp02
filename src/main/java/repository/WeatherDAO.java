@@ -68,13 +68,19 @@ public class WeatherDAO {
         }
     }
 
-
-    public WeatherEntity getWeatherByLocationName(String locationName) {
+    //get all weather by location name
+    public List<WeatherEntity> getWeatherByLocationName(String partialLocationName) {
         try (EntityManager em = emf.createEntityManager()) {
-            WeatherEntity weatherEntity = em.createQuery("SELECT w FROM WeatherEntity w WHERE w.locationName = :locationName", WeatherEntity.class)
-                    .setParameter("locationName", locationName)
-                    .getSingleResult();
-            return weatherEntity;
+            List<WeatherEntity> weatherEntities = em.createQuery("SELECT w FROM WeatherEntity w WHERE w.locationName LIKE :partialLocationName", WeatherEntity.class)
+                    .setParameter("partialLocationName", "%" + partialLocationName + "%")
+                    .getResultList();
+            if (weatherEntities.isEmpty()) {
+                System.out.println("Could not find any weather with location name containing: " + partialLocationName);
+            }
+            return weatherEntities;
+        } catch (Exception e) {
+            System.out.println("Error in getWeatherByLocationName: " + e.getMessage());
+            return null;
         }
     }
 
