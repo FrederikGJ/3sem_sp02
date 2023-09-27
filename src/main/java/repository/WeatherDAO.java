@@ -68,7 +68,7 @@ public class WeatherDAO {
         }
     }
 
-    
+
     public WeatherEntity getWeatherByLocationName(String locationName) {
         try (EntityManager em = emf.createEntityManager()) {
             WeatherEntity weatherEntity = em.createQuery("SELECT w FROM WeatherEntity w WHERE w.locationName = :locationName", WeatherEntity.class)

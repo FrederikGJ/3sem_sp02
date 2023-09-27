@@ -28,9 +28,13 @@ public class Main {
         //create weather in database
         weatherEntityList.forEach(weatherDAO::createWeather);
 
-        //read all weather from database
+        //Se alle vejr entitieter i db
         List<WeatherEntity> weatherEntityList1 = weatherDAO.readAllWeather();
         weatherEntityList1.forEach(System.out::println);
+
+        System.out.println("We want to see weather with location Roskilde");
+        WeatherEntity weatherEntity = weatherDAO.getWeatherByLocationName("Roskilde");
+        System.out.println(weatherEntity);
 
 
     }
