@@ -1,5 +1,5 @@
 # 3. semester SP opgave 02 
-## - gruppe 4 (kun for piger... og Frederik)
+## - gruppe 4 (kun for piger - og Frederik)
 
 ### Introduktion til projetet 
 Projektet er en SP02 opgave på datamatikeruddannelsens 3. semester (CPH Business). 
