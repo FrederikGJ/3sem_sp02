@@ -41,5 +41,7 @@ https://vejr.eu/pages/api-documentation
 ### Porjektarbejdet 
 bla bla vir gjorde xyz 
 
+Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature branches, som vi senere mergede sammen i produktionen (Main). 
+
 ### Litteraturliste
 Bogen bog.. 
