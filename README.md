@@ -44,7 +44,7 @@ Til at starte med organiserede vi projektet. Vi lavede en uformel gennemgang af 
 > Communication, Planning, Modeling, Construction og Deployment <br>
 > (Pressman & Maxim, 2014, s. 10-11)
 
-I vores team har vi et godt sammenhold, og har derfor en god kommunikation fra start, som varede ved gennem hele projektet. Vi kommunkerede både mundtligt, da vi mødtes fysisk de fleste dage, samt elektronisk i projektgruppens facebook. 
+I vores team har vi et godt sammenhold, og har derfor en god kommunikation fra start, som varede ved gennem hele projektet. Vi kommunkerede både mundtligt, da vi mødtes fysisk de fleste dage, samt elektronisk i projektgruppes facebook. 
 
 Vi planlagde projektet ved at gennemgå kravspecifikationerne og skrive dem ind i et fælles Google Doc. Vi valgte ikke at bruge Kanban Board til opgaven, da scope for opgaven var begrænset. Ved større projekter, der strækker sig ud over en uges varighed, bruger vi Kanban værktøjet Trello. 
 
