@@ -38,10 +38,13 @@ Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen
 https://dawadocs.dataforsyningen.dk/dok/api/sted <br>
 https://vejr.eu/pages/api-documentation
 
-### Porjektarbejdet 
+### Projektarbejdet 
 bla bla vir gjorde xyz 
+
+Design patterns: 
+Vores DAO objekter følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden på klassen. 
 
 Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature branches, som vi senere mergede sammen i produktionen (Main). 
 
 ### Litteraturliste
-Bogen bog.. 
+Pressman, R.S. and Maxim, B., 2014. Software Engineering: A Practitioner's Approach, 9th ed. [New York].
