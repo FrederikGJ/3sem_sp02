@@ -49,7 +49,7 @@ asdf asdf asdf
 I vores projekt har vi gjort brug af et design patterns. Designe patterns bruger kendte vræktøjer til at løse kendte problemer.    <br>
 Et designpattern kan også beskrives mere formelt som: *"asdfasdfasdf asdfasdfasdf asdfasdfasdfasdf "* (Pressman & Maxim, 2014, s. 164)
 <br>
-Vores DAO objekter følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden på klassen. 
+Vores DAO klasser følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden, som kaldes direkte på klassen. 
 
 Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature branches, som vi senere mergede sammen i produktionen (Main). 
 
