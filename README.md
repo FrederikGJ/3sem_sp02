@@ -39,7 +39,7 @@ https://dawadocs.dataforsyningen.dk/dok/api/sted <br>
 https://vejr.eu/pages/api-documentation
 
 ### Projektarbejdet 
-Til at starte med organiserede vi projektet. Vi lavede en ufromel gennemgang af det der af Pressman og Maxim kaldes for The Process Framework (Pressman & Maxim, 2014, s. 10-11).
+Til at starte med organiserede vi projektet. Vi lavede en uformel gennemgang af det der af Pressman og Maxim kaldes for The Process Framework (Pressman & Maxim, 2014, s. 10-11).
 > The Process Framework indeholder følgende kategorier <br>
 > Communication, Planning, Modeling, Construction og Deployment <br>
 > (Pressman & Maxim, 2014, s. 10-11)
