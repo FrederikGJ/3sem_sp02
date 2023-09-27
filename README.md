@@ -13,7 +13,9 @@ Teknologierne der er anvendt i projektet, samt applikationens lag er beskrevet n
 > Frederik G. Johannessen
 
 ### Business Idea 
-Vores forretning **Data Girls** er en innovativ forretning med fokus på at forudse vejrmønstre i Danmark. Gennem nøje analyse af data indhentet fra diverse vejrtjenester, formår vi at forudse, hvilke områder i landet der vil opleve større regnmængder. Dette giver os en unik position til at målrette salget af produkter såsom paraplyer, gummistøvler og regnslag fra den anerkendte spanske producent, **RainMain**. 
+Firmanvan: **Data Girls**.
+
+Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen (eller rettere i skyerne) for at afdække, hvor i Danmark regndråberne næste gang vil danse. Og voila! Når skyerne samler sig, og regnen begynder at falde, er vi klar til at målrette salget af de mest stilfulde paraplyer, komfortable gummistøvler og effektive regnslag - alt sammen fra den eksklusive spanske producent, **RainMain!**
 
 
 ### Vi vil anvende følgende teknologier
