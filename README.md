@@ -6,11 +6,13 @@ Projektet er en SP02 opgave på datamatikeruddannelsens 3. semester (CPH Busines
 Overordnet set handler projetktet om at trække data fra en hjemmeside og gemme data på en database. Altså webscraping (datamining) og brug af Rest API.
 Teknologierne der er anvendt i projektet, samt applikationens lag er beskrevet nedenfor, og vil derfor ikke fylde noget i introduktionen. 
 
-> Porjektdeltagere er:
-> Natasja Vitoft
-> Veronika Minddal
-> Signe K. Larsen
+> Porjektdeltagere er:<br>
+> Natasja Vitoft <br>
+> Veronika Minddal <br>
+> Signe K. Larsen <br>
 > Frederik G. Johannessen
+
+### Business Idea 
 
 
 ### Vi vil anvende følgende teknologier
