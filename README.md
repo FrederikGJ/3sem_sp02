@@ -13,7 +13,7 @@ Teknologierne der er anvendt i projektet, samt applikationens lag er beskrevet n
 > Frederik G. Johannessen
 
 ### Business Idea 
-Firmanvan: **Data Girls**.
+Firmanavn: **Data Girls**.
 
 Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen (eller rettere i skyerne) for at afdække, hvor i Danmark regndråberne næste gang vil danse. Og voila! Når skyerne samler sig, og regnen begynder at falde, er vi klar til at målrette salget af de mest stilfulde paraplyer, komfortable gummistøvler og effektive regnslag - alt sammen fra den eksklusive spanske producent, **RainMain!**
 
