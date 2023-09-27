@@ -30,8 +30,6 @@ public class ApiReader {
             response = client.newCall(request).execute();
             String res = response.body().string();
 
-
-
             return weatherParser(res);
 
         } catch (IOException e) {
