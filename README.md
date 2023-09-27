@@ -39,9 +39,17 @@ https://dawadocs.dataforsyningen.dk/dok/api/sted <br>
 https://vejr.eu/pages/api-documentation
 
 ### Projektarbejdet 
-bla bla vir gjorde xyz 
+Til at starte med organiserede vi projektet. Vi lavede en ufromel gennemgang af det der af Pressman og Maxim kaldes for The Process Framework (Pressman & Maxim, 2014, s. 10-11).
+> The Process Framework indeholder følgende kategorier <br>
+> asdf
+> asdf
+> asdf
+> asdf
+> (Pressman & Maxim, 2014, s. 10-11)
 
-Design patterns: 
+I vores projekt har vi gjort brug af et design pattern, <br>
+Et designpattern kan have følgende formelle beskrivelse: *"asdfasdfasdf asdfasdfasdf asdfasdfasdfasdf "* (Pressman & Maxim, 2014, s. 164)
+<br>
 Vores DAO objekter følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden på klassen. 
 
 Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature branches, som vi senere mergede sammen i produktionen (Main). 
