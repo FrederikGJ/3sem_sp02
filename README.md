@@ -44,8 +44,10 @@ Til at starte med organiserede vi projektet. Vi lavede en uformel gennemgang af 
 > Communication, Planning, Modeling, Construction og Deployment <br>
 > (Pressman & Maxim, 2014, s. 10-11)
 
-I vores projekt har vi gjort brug af et design pattern, <br>
-Et designpattern kan have følgende formelle beskrivelse: *"asdfasdfasdf asdfasdfasdf asdfasdfasdfasdf "* (Pressman & Maxim, 2014, s. 164)
+asdf asdf asdf
+
+I vores projekt har vi gjort brug af et design patterns. Designe patterns bruger kendte vræktøjer til at løse kendte problemer.    <br>
+Et designpattern kan også beskrives mere formelt som: *"asdfasdfasdf asdfasdfasdf asdfasdfasdfasdf "* (Pressman & Maxim, 2014, s. 164)
 <br>
 Vores DAO objekter følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden på klassen. 
 
