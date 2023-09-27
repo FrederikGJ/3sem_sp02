@@ -27,6 +27,7 @@ public class ApiReader {
         try {
             response = client.newCall(request).execute();
             String res = response.body().string();
+
             return weatherParser(res);
         } catch (IOException e) {
             System.out.println("ERROR WITH THE API" + e.getMessage());

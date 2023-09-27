@@ -24,12 +24,20 @@ public class Main {
         weatherEntityList.add(w3);
         weatherEntityList.add(w4);
 
-        weatherEntityList.forEach(System.out::println);
+        //weatherEntityList.forEach(System.out::println);
 
         WeatherDAO weatherDAO = WeatherDAO.getInstance();
 
         //create weather in database
         weatherEntityList.forEach(weatherDAO::createWeather);
+
+        //Se alle vejr entitieter i db
+        List<WeatherEntity> weatherEntityList1 = weatherDAO.readAllWeather();
+        weatherEntityList1.forEach(System.out::println);
+
+        System.out.println("We want to see weather with location Roskilde");
+        List<WeatherEntity> weatherEntityList2 = weatherDAO.getWeatherByLocationName("Hillerød");
+        System.out.println(weatherEntityList2);
 
 
         List<LocationEntity> locationEntityList = new ArrayList<>();
