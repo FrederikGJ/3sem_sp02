@@ -41,10 +41,7 @@ https://vejr.eu/pages/api-documentation
 ### Projektarbejdet 
 Til at starte med organiserede vi projektet. Vi lavede en ufromel gennemgang af det der af Pressman og Maxim kaldes for The Process Framework (Pressman & Maxim, 2014, s. 10-11).
 > The Process Framework indeholder følgende kategorier <br>
-> asdf
-> asdf
-> asdf
-> asdf
+> Communication, Planning, Modeling, Construction og Deployment <br>
 > (Pressman & Maxim, 2014, s. 10-11)
 
 I vores projekt har vi gjort brug af et design pattern, <br>
