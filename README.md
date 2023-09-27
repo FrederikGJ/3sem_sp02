@@ -1,6 +1,13 @@
 # 3. semester SP opgave 02 
 ## - gruppe 4 (kun for piger... og Frederik)
 
+### Introduktion til projetet 
+
+> lololo
+> asdf
+> asdf
+> asdf
+
 ### Vi vil anvende følgende teknologier:
 ![Java](https://img.shields.io/badge/Java-%23FF0000?style=flat-square&logo=java&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791?style=flat-square&logo=postgresql&logoColor=white)
