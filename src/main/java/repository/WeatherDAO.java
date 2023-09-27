@@ -6,6 +6,8 @@ import model.WeatherEntity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
+import java.util.List;
+
 public class WeatherDAO {
 
     private EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryConfig();
@@ -61,6 +63,13 @@ public class WeatherDAO {
     // implementer yderligere metoder til DAO - getAll, getYesterday, update(LocalDate date) etc.
     // lave test af de ting jeg selv har skrevet
     // lave en frontend i react ???
+
+    public List<WeatherEntity> readAllWeather () {
+        try (EntityManager em = emf.createEntityManager()) {
+            List<WeatherEntity> locationEntities = em.createQuery("SELECT w FROM WeatherEntity w", WeatherEntity.class).getResultList();
+            return locationEntities;
+        }
+    }
 
 
 
