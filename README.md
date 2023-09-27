@@ -55,7 +55,7 @@ Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature bra
 Alt i alt er vi tilfredse med samarbejdet, men vi har talt om, at vi ved næste projekt vil bruge Kanban selvom det er et kort porjekt. Da Kanban giver et dejligt overblik over opgaverne. 
 
 ### Koden
-Når vi strukturerer vores kode i foldere og klasser, er det fordi vi gerne vil opnå hvad der hos Pressman og Maxim kaldes Seperation of Concerns (Pressman & Maxim, 2014, s. 164). Det handler om, at vi tager det store problem, som er at bygge hele applikationen, og bryder det ned til mindre og mere overskuelige bestandele. De dele er de mapper og klasser applikationen består af. Tilgangen gør det mere overskueligt for os at arbejde sammen om projektet, samtidig med at det gør koden nemmere at refaktorere på et senere tidspunkt. 
+Når vi strukturerer vores kode i foldere og klasser, er det fordi vi gerne vil opnå hvad der hos Pressman og Maxim kaldes Seperation of Concerns (Pressman & Maxim, 2014, s. 165). Seperation of Concerns handler om, at vi tager det store problem, som er at bygge hele applikationen, og bryder det ned til mindre og mere overskuelige bestandele. De dele er de mapper og klasser applikationen består af. Tilgangen gør det mere overskueligt for os at arbejde sammen om projektet, samtidig med at det gør koden nemmere at refaktorere på et senere tidspunkt. 
 
 I vores projekt har vi gjort brug af et design pattern. Design patterns bruger kendte vræktøjer til at løse kendte problemer.
 
