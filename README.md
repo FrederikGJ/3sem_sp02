@@ -30,4 +30,12 @@ Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen
 ### Apllikationens lag
 ![3_Sem_SP02_app](https://github.com/FrederikGJ/3sem_sp02/assets/113090989/a802b741-d6f3-46db-a20c-955c31925af3)
 
+### APIer vi har brugt til at hente data fra
+asdfadsf
+asdfadsf
 
+### Porjektarbejdet 
+bla bla vir gjorde xyz 
+
+### Litteraturliste
+Bogen bog.. 
