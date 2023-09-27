@@ -5,7 +5,7 @@ import model.WatherDTOtoEntity;
 import model.WeatherEntity;
 import repository.WeatherDAO;
 
-public class JavalinHello {
+public class JavalinApi {
     public static void main(String[] args) {
 
         WeatherDAO weatherDAO = WeatherDAO.getInstance();
