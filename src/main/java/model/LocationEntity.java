@@ -18,7 +18,6 @@ public class LocationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String navn;
     private String href;
     private String nr;
