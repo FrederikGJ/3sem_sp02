@@ -40,18 +40,31 @@ https://vejr.eu/pages/api-documentation
 
 ### Projektarbejdet 
 Til at starte med organiserede vi projektet. Vi lavede en uformel gennemgang af det der af Pressman og Maxim kaldes for The Process Framework (Pressman & Maxim, 2014, s. 10-11).
-> The Process Framework indeholder følgende kategorier <br>
+> The Process Framework indeholder følgende kategorier: <br>
 > Communication, Planning, Modeling, Construction og Deployment <br>
 > (Pressman & Maxim, 2014, s. 10-11)
 
-asdf asdf asdf
+I vores team har vi et godt sammenhold, og har derfor en god kommunikation fra start, som varede ved gennem hele projektet. Vi kommunkerede både mundtligt, da vi mødtes fysisk de fleste dage, samt elektronisk i projektgruppens facebook. 
 
-I vores projekt har vi gjort brug af et design patterns. Designe patterns bruger kendte vræktøjer til at løse kendte problemer.    <br>
-Et designpattern kan også beskrives mere formelt som: *"asdfasdfasdf asdfasdfasdf asdfasdfasdfasdf "* (Pressman & Maxim, 2014, s. 164)
-<br>
-Vores DAO klasser følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden, som kaldes direkte på klassen. 
+Vi planlagde projektet ved at gennemgå kravspecifikationerne og skrive dem ind i et fælles Google Doc. Vi valgte ikke at bruge Kanban Board til opgaven, da scope for opgaven var begrænset. Ved større projekter, der strækker sig ud over en uges varighed, bruger vi Kanban værktøjet Trello. 
+
+Når det kommer til modellen fandt vi hurtigt frem til en fornuftig løsning. Da projektet er en applikation der indeholder to lag, backend og database, samt en forbindelse ud til internettet, var arkitekturen på applikaitonen meget overkuelig (se eventulet billede af applikaitonen lag ovenfor).  
 
 Vi har brugt GitHub til versionsstyring, hvor vi hver isæt anvendte feature branches, som vi senere mergede sammen i produktionen (Main). 
+
+Alt i alt er vi tilfredse med samarbejdet, men vi har talt om, at vi ved næste projekt vil bruge Kanban selvom det er et kort porjekt. Da Kanban giver et dejligt overblik over opgaverne. 
+
+### Koden
+Når vi strukturerer vores kode i foldere og klasser, er det fordi vi gerne vil opnå hvad der hos Pressman og Maxim kaldes Seperation of Concerns (Pressman & Maxim, 2014, s. 164). Det handler om, at vi tager det store problem, som er at bygge hele applikationen, og bryder det ned til mindre og mere overskuelige bestandele. De dele er de mapper og klasser applikationen består af. Tilgangen gør det mere overskueligt for os at arbejde sammen om projektet, samtidig med at det gør koden nemmere at refaktorere på et senere tidspunkt. 
+
+I vores projekt har vi gjort brug af et design pattern. Design patterns bruger kendte vræktøjer til at løse kendte problemer.
+
+Et designpattern kan også beskrives mere formelt i Pressman og Maxims bog således: 
+
+> Brad Appleton defins a *design pattern* in the following manner: "A pattern is a named nugget  of insight which conveys the essence of a proven solution to a recurring problem within a certain context amidst competing conserns" (Pressman & Maxim, 2014, s. 164)
+
+Vores DAO klasser følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden, som kaldes direkte på klassen. Ud over DAO klasserne har vi ikke brugt nogle af de klassike design patterns. 
+
 
 ### Litteraturliste
 Pressman, R.S. and Maxim, B., 2014. Software Engineering: A Practitioner's Approach, 9th ed. [New York].
