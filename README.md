@@ -26,6 +26,8 @@ Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen
 ![Maven](https://img.shields.io/badge/Maven-%23C71A36?style=flat-square&logo=apache-maven&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-%23008000?style=flat-square&logoColor=white)
 ![Jsoup](https://img.shields.io/badge/Jsoup-%23008000?style=flat-square&logoColor=white)
+![Javalin](https://img.shields.io/badge/Javalin-%230056D6?style=flat-square&logoColor=white)
+
 
 ### Apllikationens lag
 ![3_Sem_SP02_app](https://github.com/FrederikGJ/3sem_sp02/assets/113090989/a802b741-d6f3-46db-a20c-955c31925af3)
