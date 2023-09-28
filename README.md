@@ -33,6 +33,7 @@ Ved hjælp af data, vi snedigt skraber fra vejtjenester, spår vi i kaffegrumsen
 ![3_Sem_SP02_app](https://github.com/FrederikGJ/3sem_sp02/assets/113090989/a802b741-d6f3-46db-a20c-955c31925af3)
 
 ### EER diagram
+<img width="527" alt="Screenshot 2023-09-28 at 13 14 23" src="https://github.com/FrederikGJ/3sem_sp02/assets/113090989/84985328-dcc4-41e6-97c8-791901faf9ac">
 
 ### APIer som vi har brugt til at hente data fra
 https://dawadocs.dataforsyningen.dk/dok/api/sted <br>
