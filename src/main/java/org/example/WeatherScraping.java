@@ -8,29 +8,26 @@ import java.io.IOException;
 
 public class WeatherScraping {
 
-    public static void main(String[] args) {
-        String url = "https://vejr.tv2.dk/vejr/koebenhavn-2618425";
+    public static void main(String[] args) throws IOException {
+        String url = "https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/2-2618468/Danmark/Region%20Hovedstaden/Lyngby-T%C3%A5rb%C3%A6k/Kgs.%20Lyngby";
 
         try {
             // Send a GET request to the URL
-            Document doc = Jsoup.connect(url).get();
+            Document doc = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " + "(KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36").get();
 
             // Find the element containing the weather forecast
-            Element forecastContainer = doc.selectFirst(".forecast-extended-container");
+            Elements forecastContainer = doc.getElementsByClass("daily-weather-list-item");
 
-            if (forecastContainer != null) {
-                // Find all the daily forecast elements
-                Elements dailyForecasts = forecastContainer.select(".day");
+            for (int i = 0; i < 10; i++){
+               Element weatherSection =  doc.getElementById("dailyWeatherListItem" + i);
+                String dato = String.valueOf(weatherSection.select(".daily-weather-list-item__temperature"));
+                System.out.println(dato);
 
-                // Extract and print the temperature estimate for each day
-                for (Element forecast : dailyForecasts) {
-                    String dayName = forecast.selectFirst(".day-name").text().trim();
-                    String temperature = forecast.selectFirst(".temp").text().trim();
-                    System.out.println(dayName + ": " + temperature);
-                }
-            } else {
-                System.out.println("Weather forecast not found on the page.");
             }
+
+            //System.out.println(forecastContainer);
+
+
         } catch (IOException e) {
             System.err.println("Failed to retrieve the webpage: " + e.getMessage());
         }
