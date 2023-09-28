@@ -30,7 +30,7 @@ public class JavalinApi {
         //med GET sender jeg data til klienten
         app.get("/", ctx -> ctx.result("Hello World! forntpage of app"));
 
-        app.get("/api/items", ctx -> {
+        app.get("/api/weather", ctx -> {
             try {
                 List<WeatherEntity> weatherEntityList = weatherDAO.readAllWeather();
                 ctx.json(weatherEntityList.toString());
@@ -40,7 +40,7 @@ public class JavalinApi {
         });
 
         //med POST modtager jeg data fra klienten
-        app.post("/api/items", ctx -> {
+        app.post("/api/weather", ctx -> {
             try {
                 // Convert incoming request body to WeatherEntity
                 WeatherEntity weatherEntity = ctx.bodyAsClass(WeatherEntity.class);
