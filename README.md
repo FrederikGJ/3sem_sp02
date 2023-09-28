@@ -66,8 +66,10 @@ Et design pattern kan også beskrives mere formelt i Pressman og Maxims bog sål
 
 Vores DAO klasser følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden, som kaldes direkte på klassen. Ud over DAO klasserne har vi ikke brugt nogle af de klassiske design patterns.
 
+Afsluttende vil vi gerne blive bedre til at bruge JPA til at skabe relationer mellem vores entiteter. Sådan at vi ud fra data kan skabe nye og mere interessante entiteter. 
 
 ### Litteraturliste
 Pressman, R.S. and Maxim, B., 2014. Software Engineering: A Practitioner's Approach, 9th ed. [New York].
+
 
 
