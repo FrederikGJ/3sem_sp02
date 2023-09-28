@@ -25,7 +25,6 @@ public class WeatherDTO {
         private String skyText;
         private String humidity;
         private String windText;
-
     }
 }
 

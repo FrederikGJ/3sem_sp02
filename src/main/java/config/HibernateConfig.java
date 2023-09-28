@@ -1,7 +1,9 @@
 package config;
 
+import DTO.LocationDTO;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
+import model.LocationEntity;
 import model.WeatherEntity;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -58,6 +60,7 @@ public class HibernateConfig {
         // add annotated classes
         // configuration.addAnnotatedClass(<YOUR ENTITY>.class);
         configuration.addAnnotatedClass(WeatherEntity.class);
+        configuration.addAnnotatedClass(LocationEntity.class);
     }
 
     public static EntityManagerFactory getEntityManagerFactoryConfig() {

@@ -13,5 +13,4 @@ public class WatherDTOtoEntity {
         weatherEntity.setWindText(weatherDTO.getCurrentData().getWindText());
         return weatherEntity;
     }
-
 }
