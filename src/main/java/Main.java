@@ -70,10 +70,7 @@ public class Main {
 
         locationEntityList.forEach(locationDAO::createLocation);
 
-        WeatherScraping weatherScraping = new WeatherScraping();
-
-       // System.out.println(weatherScraping.scraping());
-         weatherScraping.scraping();
+        WeatherScraping.fetchWeatherData();
 
 
     }

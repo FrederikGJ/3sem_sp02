@@ -16,7 +16,7 @@ public class YrWeather {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String locationName;
+    //private String locationName;
     private String temperature;
 
 
