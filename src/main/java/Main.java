@@ -1,16 +1,14 @@
 import controller.ApiReader;
-import model.LocationDTOtoEntity;
-import model.LocationEntity;
-import model.WatherDTOtoEntity;
-import model.WeatherEntity;
+import model.*;
 import repository.LocationDAO;
 import repository.WeatherDAO;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         List<WeatherEntity> weatherEntityList = new ArrayList<>();
 
@@ -38,7 +36,6 @@ public class Main {
         System.out.println("We want to see weather with location Roskilde");
         List<WeatherEntity> weatherEntityList2 = weatherDAO.getWeatherByLocationName("Hillerød");
         System.out.println(weatherEntityList2);
-
 
         List<LocationEntity> locationEntityList = new ArrayList<>();
 
@@ -69,9 +66,15 @@ public class Main {
         locationEntityList.forEach(System.out::println);
 
         //create location in database
-
         LocationDAO locationDAO = LocationDAO.getInstance();
 
         locationEntityList.forEach(locationDAO::createLocation);
+
+        WeatherScraping weatherScraping = new WeatherScraping();
+
+       // System.out.println(weatherScraping.scraping());
+         weatherScraping.scraping();
+
+
     }
 }
