@@ -62,6 +62,7 @@ I vores projekt har vi gjort brug af et design pattern. Design patterns bruger k
 
 Et design pattern kan også beskrives mere formelt i Pressman og Maxims bog således:
 
+> [!Note]
 > Brad Appleton defines a *design pattern* in the following manner: "A pattern is a named nugget  of insight which conveys the essence of a proven solution to a recurring problem within a certain context amidst competing concerns" (Pressman & Maxim, 2014, s. 164)
 
 Vores DAO klasser følger singleton pattern, da vi kun laver en global instans, som man så henter med getInstace() metoden, som kaldes direkte på klassen. Ud over DAO klasserne har vi ikke brugt nogle af de klassiske design patterns.
