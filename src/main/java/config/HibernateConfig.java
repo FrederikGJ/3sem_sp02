@@ -1,6 +1,5 @@
 package config;
 
-import DTO.LocationDTO;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 import model.LocationEntity;
